@@ -1,0 +1,68 @@
+#!/bin/sh 
+#Criado por mutr0l
+#Versao 1.0
+
+echo '\033[1;31m                                             \033[0m'
+echo '██╗  ██╗ ██████╗ ██╗     ██╗   ██╗██╗  ██╗'
+echo '██║  ██║██╔═══██╗██║     ██║   ██║╚██╗██╔╝'
+echo '███████║██║   ██║██║     ██║   ██║ ╚███╔╝ '
+echo '██╔══██║██║   ██║██║     ██║   ██║ ██╔██╗ '
+echo '██║  ██║╚██████╔╝███████╗╚██████╔╝██╔╝ ██╗'
+echo '╚═╝  ╚═╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝'   
+echo '\033[1;28m Download De Ferramentas Para Pentest \033[0m'
+echo '\033[1;28m Criador: mutr0l\033[0m'
+echo '\033[1;28m Versão: 1.0 \033[0m'
+menu ()
+{
+a="ok"
+
+while true $a !="ok"
+do
+   echo " ==================================="
+   echo "          MENU PRINCIPAL"
+   echo " ==================================="
+   echo " |\033[1;31m[+] 1  [+] - Download Nmap\033[0m       |"
+   echo " |\033[1;31m[+] 2  [+] - Download Sqlmap\033[0m     |"
+   echo " |\033[1;31m[+] 3  [+] - Download Atscan\033[0m     |"
+   echo " |\033[1;31m[+] 4  [+] - Download Metasploit\033[0m |"
+   echo " |\033[1;31m[+] 5  [+] - Download Nikto\033[0m      |"
+   echo " |\033[1;31m[+] 6  [+] - Download Golismero\033[0m  |"
+   echo " |\033[1;31m[+] 7  [+] - Download Hydra\033[0m      |"
+   echo " |\033[1;31m[+] 8  [+] - Download Wireshark\033[0m  |"
+   echo " |\033[1;31m[+] 9  [+] - Download Aircrack-ng\033[0m|"
+   echo " |\033[1;31m[+] 10 [+] - Download Uniscan\033[0m    |"
+   echo " |\033[1;31m[+] 11 [+] - Download Setolkit\033[0m   |"
+   echo " |\033[1;31m[+] 12 [+] - Download Armitage\033[0m   |"
+   echo " |\033[1;31m[+] 13 [+] - Download Reaver\033[0m     |"
+   echo " |\033[1;31m[+] 14 [+] - Download Hashcat\033[0m    |"
+   echo " |\033[1;31m[+] 15 [+] - Download Medusa\033[0m     |"
+   echo " |\033[1;31m[+] 16 [+] - Download Ettercap\033[0m   |"
+   echo " ==================================="
+   echo " |────[ \033[1;31m$USER\033[0m@\033[1;31mHolux\033[0m ]─────|"
+   echo " |  Digite a opçao a baixo | "
+   read                                a               
+   case $a in
+
+   1)wget https://nmap.org/dist/nmap-7.40.tar.bz2;;
+   2)wget https://github.com/sqlmapproject/sqlmap/tarball/master;;
+   3)wget https://github.com/AlisamTechnology/ATSCAN/archive/master.zip;;
+   4)wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run;;
+   5)wget https://cirt.net/nikto/nikto-2.1.5.tar.bz2;;
+   6)wget https://github.com/golismero/golismero/archive/master.zip;;
+   7)wget https://github.com/vanhauser-thc/thc-hydra/archive/master.zip;;
+   8)wget https://2.na.dl.wireshark.org/src/wireshark-2.2.6.tar.bz2;;
+   9)wget http://download.aircrack-ng.org/aircrack-ng-1.2-rc4.tar.gz;;
+   10)wget https://github.com/poerschke/Uniscan/archive/master.zip;;
+   11)wget https://github.com/trustedsec/social-engineer-toolkit/archive/master.zip;;
+   12)wget http://www.fastandeasyhacking.com/download/armitage150813.tgz;;
+   13)wget https://github.com/t6x/reaver-wps-fork-t6x/archive/master.zip;;
+   14)wget https://hashcat.net/files/hashcat-3.5.0.tar.gz;;
+   15)wget http://www.foofus.net/jmk/tools/medusa-2.2.tar.gz;;
+   16)wget https://github.com/Ettercap/ettercap/archive/v0.8.2.tar.gz;;
+
+   esac
+done
+}
+
+menu
+
